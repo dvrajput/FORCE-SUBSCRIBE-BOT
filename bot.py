@@ -134,5 +134,5 @@ async def strt(event):
     await event.reply(f"Hi. I'm HM-FORCE-SUBSCRIBE-BOT made specially for @{channel}!\n\nCheckout @HM_MODS :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Repository", url="https://github.com/HM-MODS/HM-FORCE-SUBSCRIBE-BOT")])
 
     
-print("ForceSub Bot has started.\nDo visit @HM_MODS!")
+print("ForceSub Bot has started.\nDo @dvmovies_official2!")
 BotzHub.run_until_disconnected()
