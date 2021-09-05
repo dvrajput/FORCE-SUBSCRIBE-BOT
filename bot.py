@@ -131,7 +131,7 @@ async def _(event):
 
 @BotzHub.on(events.NewMessage(pattern="/start"))
 async def strt(event):
-    await event.reply(f"Hi. I'm HM-FORCE-SUBSCRIBE-BOT made specially for @{channel}!\n\nCheckout @dvmovies_official2 :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Repository", url="https://github.com/HM-MODS/HM-FORCE-SUBSCRIBE-BOT")])
+    await event.reply(f"Hi. I'm FORCE-SUBSCRIBE-BOT made specially for @{channel}!\n\nCheckout @dvmovies_official2 :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Creator", url=""https://t.me/Vishvrajsinh")])
 
     
 print("ForceSub Bot has started.\nDo @dvmovies_official2!")
