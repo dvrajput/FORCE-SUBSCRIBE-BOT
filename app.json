@@ -13,27 +13,27 @@
     "env": {
         "API_HASH": {
             "description": "You API HASH from my.telegram.org",
-            "value": ""
+            "value": "7643fb62451cd21337678f1f241f7b79"
         },
         "API_ID": {
             "description": "You API ID from my.telegram.org",
-            "value": ""
+            "value": "8569540"
         },
         "BOT_TOKEN": {
             "description": "Bot token, get it from @BotFather.",
-            "value": ""
+            "value": "1963338739:AAGiLliRy-1FCYbo8FxR2Js4VeSDV3xykO0"
         },
         "CHANNEL": {
             "description": "Channel @username for force join.",
-            "value": ""
+            "value": "dvmoviesbackup"
         },
         "WELCOME_MSG": {
             "description": "The welcome message to display. Can be formatted with {mention}, {title}, {fullname}, {username}, {name}, {last}, {channel}.",
-            "value": ""
+            "value": "Hi {mention}, Welcome to DV Request New, \nGood to see you here!"
         },
         "WELCOME_NOT_JOINED": {
             "description": "The welcome message to display if user hasn't joined the channel. Can be formatted with {mention}, {title}, {fullname}, {username}, {name}, {last}, {channel}.",
-            "value": ""
+            "value": "Hey {mention}, First Join Our {channel}, Then Press Unmute Me !"
         },
         "ON_JOIN": {
             "description": "True/False. To configure if user must be muted directly on joining",
