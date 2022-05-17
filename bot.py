@@ -128,7 +128,7 @@ async def _(event):
             await event.edit(msg, buttons=butt)
     else:
         await event.answer("You are an old member and can speak freely! This isn't for you!", cache_time=0, alert=True)
-
+ mention = f"[{get_display_name(user)}](tg://user?id={user.id})"
 @BotzHub.on(events.NewMessage(pattern="/start"))
 async def strt(event):
     await event.reply(f"Hi {mention} I'm a force subscribe bot made specially for @{channel}!\n\nCheckout @dvmoviesbackup :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Creator", url="https://t.me/profesar_bot")])
