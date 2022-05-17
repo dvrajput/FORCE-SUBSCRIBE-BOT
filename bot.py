@@ -101,13 +101,12 @@ async def mute_on_msg(event):
         if temp.user.bot:
             return
         nm = temp.user.first_name
-        mn = temp.user.mention
         try:
             await BotzHub.edit_permissions(event.chat.id, event.sender_id, until_date=None, send_messages=False)
         except Exception as e:
             print(str(e))
             return
-        await event.reply(f"Hey {mn}, seems like you haven't joined our channel. Please join @{channel} and then press the button below to unmute yourself!", buttons=[[Button.url("Channel", url=f"https://t.me/{channel}")], [Button.inline("UnMute Me", data=f"unmute_{event.sender_id}")]])
+        await event.reply(f"Hey {nm}, seems like you haven't joined our channel. Please join @{channel} and then press the button below to unmute yourself!", buttons=[[Button.url("Channel", url=f"https://t.me/{channel}")], [Button.inline("UnMute Me", data=f"unmute_{event.sender_id}")]])
 
 
 @BotzHub.on(events.callbackquery.CallbackQuery(data=re.compile(b"unmute_(.*)")))
